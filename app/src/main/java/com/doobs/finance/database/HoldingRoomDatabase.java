@@ -24,7 +24,7 @@ public abstract class HoldingRoomDatabase extends RoomDatabase {
      * @param context
      * @return
      */
-    public static HoldingRoomDatabase getInstane(final Context context) {
+    public static HoldingRoomDatabase getInstance(final Context context) {
         if (holdingRoomDatabase == null) {
             synchronized (HoldingRoomDatabase.class) {
                 holdingRoomDatabase = Room.databaseBuilder(context.getApplicationContext(), HoldingRoomDatabase.class, "holding_database").build();
