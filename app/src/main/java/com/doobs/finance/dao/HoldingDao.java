@@ -1,5 +1,6 @@
 package com.doobs.finance.dao;
 
+import android.arch.lifecycle.LiveData;
 import android.arch.persistence.room.Dao;
 import android.arch.persistence.room.Delete;
 import android.arch.persistence.room.Insert;
@@ -31,6 +32,6 @@ public interface HoldingDao {
     public void deleteAll();
 
     @Query("select * from inv_investment_holding order by symbol")
-    public List<Holding> getAllHoldings();
+    public LiveData<List<Holding>> getAllHoldings();
 
 }
