@@ -12,7 +12,7 @@ import java.util.List;
 
 /**
  * Repository class to communicate with the dao
- * 
+ *
  * Created by mduby on 7/29/18.
  */
 
